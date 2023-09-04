@@ -1,0 +1,91 @@
+{
+        id: "1",
+        category:"UI/UX Design",
+       title:"UI/UX Design ",
+        description:`In this course you will learn the Foundations of User Interface and User Experience
+         Design. We will cover core concepts such as Design Thinking,
+          UX Research, Brand Identity, Design Theory, Wireframes & Prototypes.`,
+        location:"Onsite / Online",
+        price:"25000",
+        duration: 5,
+        status: "Enroll",
+        imageURL: UI,
+        name:"Akwunté Amali",
+        bio:`Drawing from an extensive background in UI/UX design, Mali has honed
+         the ability to translate complex concepts into elegant, user-friendly 
+         
+         interfaces. By collaborating closely with cross-functional teams, Mali 
+         effectively gathers insights and user feedback to refine designs, ensuring 
+         each iteration aligns perfectly with project goals and end-user needs. With 
+         a passion for delivering exceptional user experiences, Mail's work reflects a balance between artistic 
+        flair and a dedication to creating purposeful, engaging digital products.`,
+        image:Mali,
+        socials: [{
+          icon: Tw, url: "#"},
+          {icon :In ,url: "https://www.linkedin.com/in/akwunteamali/" },
+          {icon :Ig, url: ""},
+          {icon :Fb, url: ""},
+        ],
+        
+        outline: [
+          {
+            time : "Month 1",
+            tile: "Introduction to Design Thinking",
+            content: [
+            {title:'1. Introduction to Design Thinking.'},
+            {title:'2. Empathy and User-Centered Design'},
+            {title:'3. Definition and Problem Framing.'},
+            {title:'4. Ideation and Creativity'},
+            {title:'5. Prototyping and Testing'},
+            {title:'6. Design hand-off & implementation.'}
+          ]
+          },
+          {
+            time : "Month 2",
+            tile: "Design Theory & Fundamentals",
+            content: [
+              {title:'1. Grids & Layouts'},
+               {title:'2. Colour theory'}, 
+               {title:'3. Typography'},
+               {title:'4. Motion & Micro-interactions.'},
+               {title:'5. Collaborative tools for Design.'},
+               {title:'6. Design & Prototyping for mobile & Web.'},
+               {title:'7. Design Systems.'},
+              ]
+          },
+          {
+            time : "Month 3",
+            tile: "UX Research Methodologies",
+            content: [
+              {title:'1. Qualitative & Quantitative Research.)'},
+  
+            {title:'2. How to conduct user interviews & gather feedback.'},
+            {title: '3. How to frame a Problem Statement.'},
+            {title:'4. Importance of Empathy maps.'},
+            {title:'5. User Journey-mapping made easy.'},
+            {title:'6. Feedback, Iteration & Testing.'},
+
+          ]
+          },
+          {
+            time : "Month 4",
+            tile: "Advanced Application of UX Principles.",
+            content: [{
+              title:'1. Case Study: Fintech Solution.'
+            }]
+          },
+          {
+            time : "Month 5",
+            tile: "Deep dive into Prototyping.",
+            content: [{
+              title:'1. Portfolio Project Kick-off..'
+            }]
+          }
+
+        ]
+        
+       
+      
+      
+      
+    },
