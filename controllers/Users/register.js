@@ -17,7 +17,7 @@ export const Register = asyncHandler(async (req, res) => {
         const userExists = await User.findOne( { email }); 
         if(userExists){
             console.log(userExists)
-            return res.status(201).send({ msg: "user Already exist"})
+            return res.status(409).send({ error: "user Already exist"})
         }
         //save user to database 
         await user.save(); 
@@ -26,7 +26,7 @@ export const Register = asyncHandler(async (req, res) => {
         const data = user 
         res.status(201).send({
             data: data, 
-            msg: "Register/SignUp SUCCESSFUL!!!!"
+            msg: "Registeration SUCCESSFUL"
         })
     } catch (error) {
         console.log("there is an error", error); 

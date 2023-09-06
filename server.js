@@ -13,6 +13,7 @@ const app = express();
 
 app.use(bodyParser.json()); 
 app.use(bodyParser.urlencoded({ extended: true })); 
+app.use(cors());
 
 
 app.use(function(req, res, next) {
@@ -24,16 +25,9 @@ app.use(function(req, res, next) {
 import { userRoute } from './routes/userRoute.js';
 import { courseRoute } from './routes/courseRoute.js';
 
-
-
-
-
-
 //routes 
 app.use('/user', userRoute)
 app.use('/courses', courseRoute)
-
-
 
 
 app.get('/', (req, res) => {
