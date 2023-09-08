@@ -4,6 +4,7 @@ import bodyParser from 'body-parser';
 import { MONGO_URL } from './config/db.js';
 import mongoose from 'mongoose'; 
 import cors from 'cors'; 
+import path from "path"; 
 import { errorHandler } from './middleware/errorHandler.js';
 
 const port = 5000; 
@@ -11,8 +12,18 @@ const port = 5000;
 const app = express(); 
 
 
+const __dirname = path.resolve(); 
+
+
+
 app.use(bodyParser.json()); 
 app.use(bodyParser.urlencoded({ extended: true })); 
+app.use(express.static(path.join(__dirname, 'views'))); 
+app.use(express.static("./COLLIDE-BACKEND/views")); 
+app.use('/views/images', express.static('./views/images'))
+app.use(cors()); 
+app.set('view engine', 'ejs'); 
+
 
 
 app.use(function(req, res, next) {

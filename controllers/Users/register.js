@@ -1,7 +1,7 @@
 import express from "express"; 
 import User from "../../models/User.js"; 
 
-import { hashPassword } from "../../utils/index.js";
+import { hashPassword, welcomeEmail } from "../../utils/index.js";
 
 import bcrypt from "bcrypt"; 
 import asyncHandler from "express-async-handler"
@@ -21,8 +21,9 @@ export const Register = asyncHandler(async (req, res) => {
         }
         //save user to database 
         await user.save(); 
+        
         //send Welcome email here 
-        //welcomeEmail(user.email, user.firstName); 
+        welcomeEmail(user.email, user.firstName); 
         const data = user 
         res.status(201).send({
             data: data, 

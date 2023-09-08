@@ -1,5 +1,5 @@
 import express from 'express';
-import { createCourse, deleteCourse, getCourse, getCourses, updateCourse } from '../controllers/course/index.js';
+import { RegisterCourseUser, createCourse, deleteCourse, getCourse, getCourses, updateCourse } from '../controllers/course/index.js';
 import { ValidateToken } from '../middleware/ValidateToken.js';
 const router = express.Router(); 
 
@@ -24,6 +24,10 @@ router.put("/api/v1/update-course", ValidateToken, updateCourse)
 
 //delete course  
 router.delete("/api/v1/delete-course", ValidateToken, deleteCourse)
+
+
+//add a course to an existing user 
+router.post("/api/v1/register-a-course", ValidateToken, RegisterCourseUser)
 
 
 

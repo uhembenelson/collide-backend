@@ -7,6 +7,9 @@ const UserSchema = new Schema({
     email: { type: String}, 
     phoneNumber: { type: String}, 
     password: { type: String}, 
+    walletBalance: { type: String}, 
+    Courses: {type: Array}, 
+    registeredCourse: {type: Array}, 
     timestamps: {
         createdAt: {
             type: Date, 
