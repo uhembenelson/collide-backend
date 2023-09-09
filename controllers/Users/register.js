@@ -7,11 +7,11 @@ import bcrypt from "bcrypt";
 import asyncHandler from "express-async-handler"
 
 export const Register = asyncHandler(async (req, res) => {
-    const { firstName, lastName, email, phoneNumber } = req.body; 
+    const { firstName, email } = req.body; 
 
     const apiKey = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15); 
     const password = await hashPassword(req.body.password); 
-    const user = new User({ firstName, lastName, email, phoneNumber, password}) 
+    const user = new User({ firstName, email, password}) 
     try {
         //check if user with email already exists 
         const userExists = await User.findOne( { email }); 
@@ -26,7 +26,7 @@ export const Register = asyncHandler(async (req, res) => {
         const data = user 
         res.status(201).send({
             data: data, 
-            msg: "Registeration SUCCESSFUL"
+            msg: "Registeration Successful"
         })
     } catch (error) {
         console.log("there is an error", error); 

@@ -6,7 +6,6 @@ export const ValidateToken = async (req, res, next) => {
     let authHeader = req.headers.Authorization || req.headers.authorization; 
     if(authHeader && authHeader.startsWith('Bearer')){
         token = authHeader.split(' ')[1]; 
-
         jwt.verify(
             token, 'eking@590', (err, decoded) => {
                 if(err){
