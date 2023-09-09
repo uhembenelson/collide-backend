@@ -8,6 +8,9 @@
     "start": "server.js",
     "dev": "nodemon server.js"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "author": "Ebor Kingsley",
   "license": "ISC",
   "type": "module",
