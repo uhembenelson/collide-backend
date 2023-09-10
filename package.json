@@ -1,37 +1,32 @@
+
+
+
 {
-  "name": "lms-backend",
+  "name": "borrowlite",
   "version": "1.0.0",
-  "description": "LMS project",
-  "main": "server.js",
+  "description": "borrowlite is a platform that allows borrow electricity and pay back later ",
+  "main": "node index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "server.js",
-    "dev": "nodemon server.js"
+    "start": "node index.js"
   },
-  "engines": {
-    "node": "18.x"
-  },
-  "author": "Ebor Kingsley",
+  "author": "Uhembe Nelson",
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "bcrypt": "^5.1.1",
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.20.2",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.0",
     "cors": "^2.8.5",
-    "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "express-async-handler": "^1.2.0",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^7.5.0",
-    "morgan": "^1.10.0",
-    "node-fetch": "^3.3.2",
-    "nodemailer": "^6.9.4",
-    "paystack": "^2.0.1",
-    "request": "^2.88.2",
-    "uuid": "^9.0.0"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
+    "mongoose": "^6.6.1",
+    "node-fetch": "^3.2.10",
+    "nodemailer": "^6.8.0",
+    "nodemon": "^2.0.20",
+    "request": "^2.88.0",
+    "uuid": "^9.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "express-async-handler": "^1.2.0"
   }
 }
+
+
