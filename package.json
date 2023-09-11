@@ -2,9 +2,9 @@
 
 
 {
-  "name": "borrowlite",
+  "name": "Collide",
   "version": "1.0.0",
-  "description": "borrowlite is a platform that allows borrow electricity and pay back later ",
+  "description": "Collide ",
   "main": "node index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
